@@ -172,8 +172,8 @@
             </div>
         </div>
 
-
-        <p class="text abstract">
+        <h1 class="text">Design</i> Brief</h1>
+        <!-- <p class="text abstract">
             There's a massive gap between the text-centric digital environments of current AI agents and the sensory-rich world we humans inhabit.
             To develop agents that can operate flexibly and reliably in real-world settings, we must bridge this gap and embody agents in an environment that <em>necessitates</em> the nuanced perceptual understanding required in the real world.
             Naturally, this problem has long been studied in robotics, with agents embodied physically in the world; however, the physical constraints and cost of real hardware prohibit scaling up agents and testing them in diverse environments beyond the lab.
@@ -194,7 +194,26 @@
                 <a href="https://blog.google/products/maps/street-view-15-new-features/" target="_blank">https://blog.google/products/maps/street-view-15-new-features/</a>
             </d-footnote>
             In <a href="#benchmark">&sect;WAYLO</i> Benchmark</a>, we use WAYLO</i> to construct an initial benchmark of "open-world" vision models on a <em>truly open-world</em> distribution.
+        </p> -->
+        <p class="text abstract">
+            <strong>Intent/Scope</strong><br>
+            WAYLO will focus on uncovering the real needs of users in urban exploration and optimizing the implementation of personalized recommendations and dynamic navigation. The platform will explore a dual revenue model:<br><br>
+        
+            <strong>B2C:</strong> Offering an exceptional exploration experience to users, fulfilling their diverse interests in culture, attractions, and local businesses.<br>
+            <strong>B2B:</strong> Providing precise recommendations for local attractions and businesses to increase foot traffic and improve commercial value.<br><br>
+        
+            <strong>Exploration Questions</strong><br>
+            - Which groups of people have the strongest demand for urban exploration services? What are their behavior patterns and interests?<br>
+            - How can WAYLO meet the personalized exploration needs of different users (e.g., tourists, local residents, cultural enthusiasts)?<br>
+            - How can WAYLO stand out in the highly competitive navigation and tourism markets?<br>
+            - How can WAYLO maximize user experience while creating value for local businesses and cultural institutions?<br><br>
+        
+            <strong>Target Users</strong><br>
+            - <strong>Young people</strong> who regularly enjoy Citywalk activities.<br>
+            - <strong>Local residents</strong> seeking to rediscover their city.<br>
+            - <strong>Photographers and artists</strong> documenting their Citywalk experiences.<br>
         </p>
+        
         <div class="l-page teaser-video">
             <video autoplay loop muted style="width:100%" preload="auto" playsinline>
                 <source src="static/video/teaser_gif.mp4" type="video/mp4">
@@ -207,9 +226,7 @@
         <div id="agent-exemplars" class="agent-block">
             <h1 class="text">WAYLO</i> Agent Exemplars</h1>
             <p class="text">
-                To demonstrate the versatility of the <strong>WAYLO</i></strong> platform, we use it to instantiate several exemplar agents virtually in real cities around the globe and engage them in various practical tasks.
-                For illustration, we give WAYLO</i> agents character metadata, including an 8-bit avatar, a name, a short bio, and an intention they are trying to accomplish.
-                For a deeper dive into WAYLO</i>'s components and the capabilities they enable, see <a href="#system">&sect;System Fundamentals</a>.
+                To demonstrate the versatility of the WAYLO platform, we used several sample agents and involved them in various Citywalkers tasks to simulate prototype demonstrations when users use our platform. To illustrate, we provided role metadata for the WAYLO agent, including 4 characters obtained based on real interviews and 4 completely fictional characters, including avatars, names, brief resumes, and the intentions they attempted to achieve..
             </p><p class="text">
                 Each subsequent agent and their task is designed to reveal a new capability of the platform.
                 We highlight the specific WAYLO</i> capabilities being employed throughout using tags and correspondingly colored sections:
@@ -238,7 +255,7 @@
                 </div>
                 <div class="avatar">
                     <a href="#Sarah Thompson" onmouseover="showTakeaway('takeaway-Sarah Thompson')">
-                    <img src="static/img/avatars/real_estate.png" alt="Estate recommender">
+                    <img src="static/img/avatars/urban_planner.png" alt="Estate recommender">
                     </a>
                     <figcaption>Sarah Thompson</figcaption>
                 </div>
@@ -250,7 +267,7 @@
                 </div>
                 <div class="avatar">
                     <a href="#Mr Matthew" onmouseover="showTakeaway('takeaway-Mr Matthew')">
-                    <img src="static/img/avatars/urban_planner.png" alt="Urban planner">
+                    <img src="static/img/avatars/real_estate.png" alt="Urban planner">
                     </a>
                     <figcaption>Mr Matthew</figcaption>
                 </div>
@@ -400,7 +417,7 @@
         
         <div id="Jack Ma" class="agent-block geo">
             <div class="l-screen grey-overlay"></div>
-            <h3 class="text"><img style="width: 35px" src="static/img/avatars/courier.png"> Jack Ma: Visiting Student</h3>
+            <h3 class="text"><img style="width: 35px" src="static/img/avatars/courier.png"> Jack Ma: Citywalk Enthusiast</h3>
             
             <div>
                 <d-figure>
@@ -452,7 +469,7 @@
         <!-- place recommender agent -->
         
         <div id="Miss Lee" class="agent-block language">
-        <h3 class="text" id="Miss Lee" style="margin-top: 40px;"><img style="width: 35px" src="static/img/avatars/recommender.png"> Miss Lee: Place Recommender</h3>
+        <h3 class="text" id="Miss Lee" style="margin-top: 40px;"><img style="width: 35px" src="static/img/avatars/recommender.png"> Miss Lee: Artistic Urban Explorer</h3>
         <div class="l-screen grey-overlay"></div>
         <d-figure>
             <img src="static/video/story/Miss Lee.png" alt="Figure 2" data-zoomable style="max-width: 120%;">
@@ -465,7 +482,7 @@
         </video> -->
         <p class="text">
             Miss Lee searches for possible restaurants nearby.
-            She then synthesizes public reviews to make final recommendations via GPT-4. As Jack Ma is new to the city and originally from Sichuan, she recommends the spicy Chinese joint <em>Chow House 粤德轩</em> to give him a taste of home.
+            She then synthesizes public reviews to make final recommendations via GPT-4. As Miss Lee is new to the city and originally from Sichuan, she recommends the spicy Chinese joint <em>Chow House 粤德轩</em> to give her a taste of home.
         </p>
         
         <!-- TODO: optimize mobile view -->
@@ -513,7 +530,7 @@
         <!-- Real estate agent -->
         <div id="Sarah Thompson" class="agent-block language">
             <div class="l-screen grey-overlay"></div>
-            <h3 class="text"><img style="width: 35px" src="static/img/avatars/real_estate.png"> Sarah Thompson: Estate Agent</h3>
+            <h3 class="text"><img style="width: 35px" src="static/img/avatars/urban_planner.png"> Sarah Thompson: Efficient City Traveler</h3>
             <!-- <video class="auto-video" muted autoplay preload="auto" playsinline>
                 <source src="static/video/story/Sarah Thompson.png" type="video/mp4">
                 Your browser does not support the video tag.
@@ -526,9 +543,9 @@
 
 
             <p class="text">
-                Sarah Thompson uses real estate APIs to find potential apartments in Jack Ma's desired regions and price range.
-                For each candidate, he researches its proximity to the places Jack Ma cares about. Synthesizing these factors, Sarah Thompson provides a holistic rating and accompanying reasoning using GPT-4.
-                His top recommendation is a cost-effective 1 bedroom apartment for $1986/mo, which is close to a supermarket, 2 bus stations, and a gym.
+                Sarah Thompson uses real estate APIs to find potential apartments in Sarah Thompson's desired regions and price range.
+                For each candidate, she researches its proximity to the places Sarah Thompson cares about. Synthesizing these factors, Sarah Thompson provides a holistic rating and accompanying reasoning using GPT-4.
+                Her top recommendation is a cost-effective 1 bedroom apartment for $1986/mo, which is close to a supermarket, 2 bus stations, and a gym.
             </p>
 
             <div>
@@ -644,7 +661,7 @@
         <!-- Urban Planner -->
         <div id="Mr Matthew" class="agent-block vision">
             <div class="l-screen grey-overlay"></div>
-            <h3 class="text"><img style="width: 35px" src="static/img/avatars/urban_planner.png"> Mr Matthew: Urban Planner</h3>
+            <h3 class="text"><img style="width: 35px" src="static/img/avatars/urban_planner.png"> Mr Matthew: The Cultural Explorer</h3>
             
             <!-- <video class="auto-video" muted autoplay preload="auto" playsinline>
                 <source src="static/video/story/Mr Matthew.png" type="video/mp4">
@@ -664,7 +681,7 @@
                 Mr Matthew can also zoom in to specific regions, where lighter colors represent positions with more unique instances identified.</figcaption>
             </div>
 
-            <aside class="counting-table">
+            <!-- <aside class="counting-table">
                 <figure style="width: 300px">
                     <table style="margin-bottom: 5px">
                         <tr>
@@ -684,7 +701,7 @@
                         Table 1: RX-399's counting report. *Note: contiguous benches counted as one instance.
                     </figcaption>
                 </figure>
-            </aside>
+            </aside> -->
 
             <div class="l-body">
                 <div id="UrbanPlannervideo1Container" class="video-container">
@@ -1097,452 +1114,7 @@
 
         </div>
 
-
-        <!-- Part 2: System fundamentals -->
-        <div id="system" style="position: relative">
-        <h2 class="text"><img src="static/img/icons/system.png" width="50px"> System Fundamentals</h2>
-        <p class="text">
-            Here we describe <strong>WAYLO</i></strong>'s hierarchical architecture that transforms real cities around the world into a vast virtual playground in which agents can be constructed to solve practical tasks.
-            The <i><u>platform</u></i> lies at the foundation&mdash;providing the underlying components and infrastructure for agents to employ.
-            Higher level <i><u>capabilities</u></i> of <em>Perception</em>, <em>Reasoning</em>, </em>Action</em>, and <em>Collaboration</em> emerge from the platform's components.
-            Finally, <i><u>agents</u></i> leverage these capabilities along with user-defined metadata in task-specific <code>run()</code> routines to solve tasks.
-        </p>
-        <p class="click-hint"><strong><img src="static/img/icons/click.gif" style="width: 35px"> Click on any individual module to view its detailed description</strong></p>
-        <div class="clickable-image-container">
-            <img src="static/img/architecture.jpg" alt="Architecture figure" style="width: 100%" draggable="false">
-
-            <!-- clickable regions Agent -->
-            <div class="clickable-region" style="top: 5.5%; left: 1.5%; width: 4.5%; height: 12.8%;" onclick="showInfo('agent-info');"></div>
-            <div class="clickable-region" style="top: 2.8%; left: 9.5%; width: 28.5%; height: 6.8%;" onclick="showInfo('backgroundInfo');"></div>
-            <div class="clickable-region" style="top: 2.8%; left: 39%; width: 28%; height: 6.8%;" onclick="showInfo('intentionInfo');"></div>
-            <div class="clickable-region" style="top: 2.8%; left: 67.5%; width: 28%; height: 6.8%;" onclick="showInfo('interoceptiveInfo');"></div>
-            <div class="clickable-region" style="top: 11%; left: 12%; width: 10%; height: 11%;" onclick="showInfo('agent-location');"></div>
-            <div class="clickable-region" style="top: 11%; left: 27%; width: 10%; height: 11%;" onclick="showInfo('agent-biography');"></div>
-            <div class="clickable-region" style="top: 11%; left: 40%; width: 10%; height: 11%;" onclick="showInfo('agent-goal');"></div>
-            <div class="clickable-region" style="top: 11%; left: 55%; width: 10%; height: 11%;" onclick="showInfo('agent-task');"></div>
-            <div class="clickable-region" style="top: 11%; left: 69.5%; width: 10%; height: 11%;" onclick="showInfo('agent-mental');"></div>
-            <div class="clickable-region" style="top: 11%; left: 84%; width: 10%; height: 11%;" onclick="showInfo('agent-physical');"></div>
-            <!-- clickable regions Capability -->
-            <div class="clickable-region" style="top: 22.5%; left: 1.5%; width: 4.5%; height: 22.5%;" onclick="showInfo('capability-info');"></div>
-            <div class="clickable-region" style="top: 30%; left: 10%; width: 21%; height: 7%;" onclick="showInfo('capability-perception');"></div>
-            <div class="clickable-region" style="top: 30%; left: 31.5%; width: 20.5%; height: 7%;" onclick="showInfo('capability-reasoning');"></div>
-            <div class="clickable-region" style="top: 30%; left: 53%; width: 20.5%; height: 7%;" onclick="showInfo('capability-action');"></div>
-            <div class="clickable-region" style="top: 30%; left: 74.5%; width: 20.5%; height: 7%;" onclick="showInfo('capability-collaboration');"></div>
-            <!-- clickable regions Platform -->
-            <div class="clickable-region" style="top: 62.5%; left: 1.5%; width: 4.5%; height: 16.5%;" onclick="showInfo('platform-info');"></div>
-            <div class="clickable-region" style="top: 46%; left: 9%; width: 47%; height: 8%;" onclick="showInfo('platform-cv');"></div>
-            <div class="clickable-region" style="top: 46%; left: 57%; width: 40%; height: 8%;" onclick="showInfo('platform-lm');"></div>
-            <div class="clickable-region" style="top: 73%; left: 14%; width: 77%; height: 7%;" onclick="showInfo('platform-env');"></div>
-            <div class="clickable-region" style="top: 55.5%; left: 9%; width: 13.5%; height: 15%;" onclick="showInfo('platform-cv-owr');"></div>
-            <div class="clickable-region" style="top: 55.5%; left: 23%; width: 13.5%; height: 15%;" onclick="showInfo('platform-cv-loc');"></div>
-            <div class="clickable-region" style="top: 55.5%; left: 37%; width: 13.5%; height: 15%;" onclick="showInfo('platform-cv-fm');"></div>
-            <div class="clickable-region" style="top: 55.5%; left: 51%; width: 13%; height: 15%;" onclick="showInfo('platform-cv-vqa');"></div>
-            <div class="clickable-region" style="top: 55.5%; left: 64.5%; width: 15.5%; height: 15%;" onclick="showInfo('platform-lm-tool');"></div>
-            <div class="clickable-region" style="top: 55.5%; left: 80.5%; width: 15.5%; height: 15%;" onclick="showInfo('platform-lm-interact');"></div>
-            <div class="clickable-region" style="top: 81%; left: 15%; width: 13.5%; height: 16%;" onclick="showInfo('platform-env-street');"></div>
-            <div class="clickable-region" style="top: 81%; left: 30.5%; width: 13.5%; height: 16%;" onclick="showInfo('platform-env-geoloc');"></div>
-            <div class="clickable-region" style="top: 81%; left: 45.5%; width: 13.5%; height: 16%;" onclick="showInfo('platform-env-move');"></div>
-            <div class="clickable-region" style="top: 81%; left: 61%; width: 13.5%; height: 16%;" onclick="showInfo('platform-env-map');"></div>
-            <div class="clickable-region" style="top: 81%; left: 76.5%; width: 13.5%; height: 16%;" onclick="showInfo('platform-env-place');"></div>
-        </div>
-        
-        <!-- aside information -->
-        <!-- aside information Agent -->
-        <aside class="system-fundamental-aside" id="agent-info">
-            <p>In our system, <strong>agent behavior</strong> is shaped by user-defined metadata, including a background, an intended goal, and an interoceptive state.</p>
-            <p>Concretely, agents are developed by writing task-specific <code>run()</code> routines that leverage the various components of our platform and the agent's metadata to solve tasks.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="backgroundInfo">
-            The <strong>background</strong> provides the context necessary to instantiate the agent in the real world (location), and to guide its reasoning and decision making (biography).
-        </aside>
-        <aside class="system-fundamental-aside" id="intentionInfo"> <strong>Intentions</strong> outline an agents' purpose within the environment.</aside>
-        <aside class="system-fundamental-aside" id="interoceptiveInfo">An agent's <strong>interoceptive state</strong> reflects its internal mental and physical status&mdash;varying over time and influencing its behavior.</aside>
-        <aside class="system-fundamental-aside" id="agent-location">
-            <p>Users define an agent's initial <strong>location</strong>, which can be geocoordinates or an address.</p> 
-            <p>All exemplar WAYLO</i> agents leverage this information.</p></aside>
-        <aside class="system-fundamental-aside" id="agent-biography">
-            <p>Users define an agent's <strong>biography</strong>, which can include any information (e.g. age, job, hometown, personality, relationship, etc.) about the agent.</p>
-            <p>This information is typically provided as context to inform the decisions the agent makes using LLMs, such as with the Place Recommender agents <a href="#Miss Lee">Miss Lee</a> and <a href="#Sarah Thompson">Sarah Thompson</a>, Intentional Explorer agent <a href="#hiro">Hiro</a>, and the Interactive Concierge agent <a href="#diego">Diego</a>.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="agent-goal">
-            <p>Users define an agent's <strong>goal</strong> (intention) in plain English to help guide the agent's behavior. Goals are specified in the "intention" term in each <i>character card</i>.</p>
-            <p>This information is typically provided as context to inform the decisions the agent makes using LLMs, such as with the Place Recommender agents <a href="#Miss Lee">Miss Lee</a> and <a href="#Sarah Thompson">Sarah Thompson</a>, Intentional Explorer agent <a href="#hiro">Hiro</a>, and the Interactive Concierge agent <a href="#diego">Diego</a>.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="agent-task">
-            <p>An agent's <strong>task</strong> describes the high-level behavior expected of it. It is specified as the "Task" term in each <i>character card</i>.</p>
-            <p>This information is for expositional purposes only; it is not used in the agent's decision-making context and does not directly influence agent behavior.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="agent-mental">
-            <p>Users define an agent's <strong>mental state</strong>, which can be custom defined to include any aspects such as joy, stress, sadness, etc.</p>
-            <p>In our examples, this information is mainly used in the "Interoceptive Estimator" and "Supervisor" of Interactive Concierge agent <a href="#diego">Diego</a>.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="agent-physical">
-            <p>Users define an agent's <strong>physical state</strong>, which can be custom defined to include any aspects such as hunger, energy, pain, etc.</p>
-            <p>In our examples, this information is mainly used in the "Interoceptive Estimator" and "Supervisor" of Interactive Concierge agent <a href="#diego">Diego</a>.</p>
-        </aside>
-        <!-- aside information Capability -->
-        <aside class="system-fundamental-aside" id="capability-info">
-            <p><strong>Capabilities</strong> bridge the agent with the platform. Agents are able to leverage different capabilities along with the user-defined metadata to accomplish a multitude of tasks.</p>
-            <p>In <a href="#agent-exemplars">&sect;WAYLO</i>  agents</a> section, we present agents that exhibit increasingly complex behaviors, each requiring additional components from the platform.
-            From simple combinations, like the Route Optimizer agent 
-            <a href="#Jack Ma">Jack Ma</a>, to more complex arrangements, 
-            like the Tourist agent <a href="#ling">Ling</a>,
-            we showcase the versatility of the WAYLO</i> platform and its applicability to a wide range of real-world scenarios.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="capability-perception"> 
-            <p><strong>Perception</strong> capabilities enable agents to process the sensory-rich data provided by the <i>environment</i>, especially street view imagery.</p>
-            <p>This capability is used in agents with <img src="static/img/tags/cv.png" class="inline-tag" draggable="false">: <a href="#rx-399">RX-399</a>, Urban Planner, Intentional Explorer, Tourist, and Interactive Concierge.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="capability-reasoning">
-            <p><strong>Reasoning</strong> capabilities allow decision making based on information from perception and the environment.</p>
-            <p>This capability is used in agents with <img src="static/img/tags/lm.png" class="inline-tag" draggable="false">: Place Recommender, Intentional Explorer, Tourist, Local, and Interactive Concierge.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="capability-action">
-            <p><strong>Action</strong> capabilities are responsible for grounding agents in the world around them; providing a navigable representation and geospatial information of real cities.</p>
-            <p>This capability is used in agents with <img src="static/img/tags/geo.png" class="inline-tag" draggable="false"> (all agents).</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="capability-collaboration">
-            <p><strong>Collaboration</strong> capabilities enable the interaction between agents or with humans.</p>
-            <p>This capability is used in agents with <img src="static/img/tags/col.png" class="inline-tag" draggable="false">, such as Tourist-Local and Interactive Concierge.</p>
-        </aside>
-        <!-- aside information Platform -->
-        <aside class="system-fundamental-aside" id="platform-info">
-            <p><strong>Platform</strong> components provide the infrastructure to instantiate capabilities, execute agent actions, and ground agents in the real world.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-cv">
-            <p><strong>Computer Vision</strong> modules instantiate vision models that are used to enable <i>perception</i> capabilities.</p>
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-lm">
-            <strong>Language Model</strong> modules instantiate LLMs which enable <i>reasoning</i> and <i>collaboration</i> capabilities via question answering, interaction, and tool & API use.</aside>
-        <aside class="system-fundamental-aside" id="platform-env">
-            <strong>Environment</strong> modules are responsible for grounding agents in the world around them: providing a navigable representation of real cities.
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-cv-owr">
-            <strong>Open-world recognition</strong> models <d-cite key="radford2021learning"></d-cite> are more general than localization models, and allow agents to detect the presence of a wide range of objects in their field of view (e.g., the Tourist searches for the Apple Store).
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-cv-loc">
-            <strong>Localization</strong> models <d-cite key="li2022grounded"></d-cite> give agents a precise spatial understanding of their environment.
-            This allows <a href="#rx-399">RX-399</a> to identify and count instances of objects, and <a href="#hiro">Hiro</a> to pick out specific businesses to look up using the environment APIs.
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-cv-fm">
-            <strong>Feature matching</strong> models <d-cite key="lindenberger2023lightglue"></d-cite> provide an understanding of continuity across views of the same location, and enable agents to identify & deduplicate instances of the same object from different viewpoints (e.g., <a href="#rx-399">RX-399</a>, Urban Planner, and Intentional Explorer <a href="#hiro">Hiro</a>).
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-cv-vqa">
-            Multimodal models with <strong>VQA</strong> capabilities <d-cite key="li2023blip"></d-cite> bridge the perceptual world with natural language, and
-            are essential for integration with <i>reasoning</i>.
-            They allow agents to verbalize visual information, transforming it into text that can be used for decision-making (e.g., the Intentional Explorer <a href="#hiro">Hiro</a> asks "What is road is better?" at intersections).
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-lm-tool">
-            LLMs such as GPT-4 <d-cite key="openai2023gpt"></d-cite> and Llama&nbsp;2 <d-cite key="touvron2023llama"></d-cite>
-            enable WAYLO</i> agents to <strong>use tools</strong> and
-            interface across various <strong>APIs</strong>, transforming environmental data and perceptual outputs into actionable insights.
-            For example, the Real Estate agent <a href="#Sarah Thompson">Sarah Thompson</a> uses real estate APIs to find properties that match a user's preferences and the Place Recommender agent <a href="#Miss Lee">Miss Lee</a> uses Google Maps APIs to find places that match a user's preferences.
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-lm-interact">
-            LLMs enable <strong>collaboration</strong> between agents or with humans through natural language (see 
-            Tourist-Local agent <a href="#ling">Ling</a> and Interactive Concierge agent <a href="#diego">Diego</a>). Custom prompts facilitate these interactions. 
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-env-street">
-            Agents can access first-person <strong>Street View Imagery</strong> cooresponding to their geolocation, field-of-view, and ego-pose. This module provides a one-to-one correspondence between street view panorama and geolocation.
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-env-geoloc">
-            The <strong>Geolocation</strong> (a set of lat-long geocoordinates) is fundamental to any embodied agent, representing its position in the world and allowing it to interoperate with other location-based APIs and modules (e.g., Movement).
-            Agents can also translate natural language addresses into a geolocation using the Geolocation module.
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-env-move">
-            Through the <strong>Movement</strong> module, an agent can obtain all navigable directions and positions that have street view imagery around its current location.
-            Agents can then use the Movement module to move to a new location, updating their geolocation.
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-env-map">
-            The <strong>Mapping</strong> module allows agents to get available routing, time, and distance from one location to another for use in decision-making.
-        </aside>
-        <aside class="system-fundamental-aside" id="platform-env-place">
-            The <strong>Place Info & Search</strong> module enables agents to lookup information about nearby destinations using search-parameters such as name, place type, radius, etc.
-            It provides place information such as name, address, reviews, photos, and so on.
-        </aside>
-
-        <figcaption style="width: 100%; text-align: center">Hierarchical WAYLO</i> architecture.</figcaption>
-        </div>
-
-
-        <!-- Part 3: Benchmark -->
-        <div id="benchmark" style="position: relative">
-        <h2 class="text"><img src="static/img/icons/benchmark.png" width="50px"> WAYLO</i> Benchmark</h2>
-        <p class="text">
-            The essential attributes of WAYLO</i> include its ability to access geographically diverse data derived from real-world sensory input, and its API that facilitates interaction with Google Map Platform (GMP) <d-cite key="google_map_platform"></d-cite>. 
-            This enables us to develop three WAYLO</i> benchmarks to assess the capabilities of existing vision models in such open-world data distribution.
-        </p>
-
-        <h3 class="text">V-<em>IRL Place:</em> Localization</h3>
-        <p class="text">
-            <strong>Motivation:</strong> Every day, humans traverse through cities, moving between diverse places to fulfil a range of goals, like the Intentional Explorer agent.
-            We assess the performance of vision models on the everyday human activity <i>place localization</i> using street view imagery and associated place data.
-        </p>
-        <p class="text">
-            <strong>Setups:</strong> We modify RX-399 agent to traverse polygonal areas while localizing & identifying 20 types of places.
-            We evaluate three prominent open-world detection models:  GroundingDINO <d-cite key="liu2023grounding"></d-cite>, GLIP <d-cite key="li2022grounded"></d-cite>, Owl-ViT <d-cite key="minderer2022simple"></d-cite>, OpenSeeD <d-cite key="zhang2023openseed"></d-cite> and Owl-ViT v2 <d-cite key="minderer2024owlvitv2"></d-cite>. We also implement a straightforward baseline, CLIP (w/ GLIP proposal), which involves reclassifying the categories
-            of GLIP proposals with CLIP <d-cite key="radford2021learning"></d-cite>.
-            Models are evaluated on localization recall, which is quantified as 
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mfrac>
-                    <mrow>
-                        <mi>N</mi>
-                        <msub>
-                            <mi></mi>
-                            <mi>tp</mi>
-                        </msub>
-                    </mrow>
-                    <mrow>
-                        <mi>N</mi>
-                        <msub>
-                            <mi></mi>
-                            <mi>tp</mi>
-                        </msub>
-                        <mo>+</mo>
-                        <mi>N</mi>
-                        <msub>
-                            <mi></mi>
-                            <mi>fn</mi>
-                        </msub>
-                    </mrow>
-                </mfrac>
-            </math>, where
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mi>N</mi>
-                <msub>
-                    <mi></mi>
-                    <mi>tp</mi>
-                </msub>
-            </math>
-            and
-            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                <mi>N</mi>
-                <msub>
-                    <mi></mi>
-                    <mi>fn</mi>
-                </msub>
-            </math>
-            represents the number of correctly localized places and missed places, respectively.
-        </p>
-
-        <d-figure>
-            <figure style="margin-top: 5px; margin-bottom: 15px">
-                <img data-zoomable src="static/img/bm_local_matching.jpg" alt="V-IRL Place Localization" style="width: 80%;display: block; margin: auto;">
-                <figcaption style="width: 100%;">Matching between 2D object proposal and street place. we first <i>project</i> the bounding box of each object proposal onto a frustum in the 3D space, subject to a radius.
-                We then determine if any <i>nearby places</i> fall within this frustum and radius. 
-                If any nearby place is found, the closest one is assigned as the <i>ground truth</i> for the object proposal. Otherwise, the object proposal is regarded as a <i>false positive</i>. 
-                When multiple places are inside the frustum, we consider the nearest one as the ground truth since it would likely block the others in the image.</figcaption>
-            </figure>
-        </d-figure>
-
-        <p class="text">
-            <strong>Results:</strong> Following table shows that open-world detectors like GroundingDINO <d-cite key="liu2023grounding"></d-cite>, Owl-ViT <d-cite key="minderer2022simple"></d-cite> and GLIP <d-cite key="li2022grounded"></d-cite> are biased towards certain place types such as <code>school</code>, <code>cafe</code>, and <code>convenience store</code>, respectively. 
-            In contrast, CLIP (w/ GLIP proposal) can identify a broader spectrum of place types.
-            This is mainly caused by the category bias in object detection datasets with a limited vocabulary. 
-            Hence, even if detectors like Owl-ViT are initialized with CLIP, their vocabulary space narrows down due to fine-tuning. 
-            These results suggest that cascading category-agnostic object proposals to zero-shot recognizers appears promising for "real" open-world localization, especially for less common categories in object detection datasets.
-        </p>
-
-        <d-figure>
-            <figure style="margin-bottom: 10px; margin-top: 0px ">
-                <img src="static/img/bm_table_localization.png" alt="V-IRL Place Localization Results" style="width: 100%">
-                <figcaption style="width: 100%;">Benchmark results on WAYLO</i> Place Localization. <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <mi>AR</mi>
-                    <msup>
-                        <mrow></mrow>
-                        <mn>10</mn>
-                    </msup>
-                </math> and <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <mi>AR</mi>
-                    <msup>
-                        <mrow></mrow>
-                        <mn>20</mn>
-                    </msup>
-                </math> denote average recall on subsampled 10 and all 20 place categories, respectively. More results in paper.</figcaption>
-            </figure>
-        </d-figure>
-
-        <div class="img-grid-row">
-            <div class="img-grid-column">
-                <img data-zoomable src="static/img/place_loc_imgs/bookstore.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/bookstore2.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/clothing2.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/jewelry.jpg" style="width:100%">
-            </div>
-            <div class="img-grid-column">
-                <img data-zoomable src="static/img/place_loc_imgs/movie.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/clothing.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/spa.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/spa2.jpg" style="width:100%">
-            </div>
-            <div class="img-grid-column">
-                <img data-zoomable src="static/img/place_loc_imgs/convenience.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/convenience2.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/laundry.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/laundry2.jpg" style="width:100%">
-            </div>
-            <div class="img-grid-column">
-                <img data-zoomable src="static/img/place_loc_imgs/bank.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/bank2.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/park.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/park2.jpg" style="width:100%">
-            </div>
-            <div class="img-grid-column">
-                <img data-zoomable src="static/img/place_loc_imgs/cafe.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/bar.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/restaurant.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/bakery.jpg" style="width:100%">
-            </div>
-            <div class="img-grid-column">
-                <img data-zoomable src="static/img/place_loc_imgs/pharmacy.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/lodging.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/hospital.jpg" style="width:100%">
-                <img data-zoomable src="static/img/place_loc_imgs/hospital2.jpg" style="width:100%">
-            </div>
-        </div>
-        <figcaption style="text-align: center; margin-bottom: 10px;">Part of WAYLO</i> Place localization benchmark results via CLIP (w/ GLIP proposal).</figcaption>
-
-
-        <h3 class="text">V-<em>IRL Place:</em> Recognition and VQA</h3>
-        <p class="text">
-            <strong>Motivation:</strong> In contrast to the challenging WAYLO</i> place localization task on street view imagery, in real life, humans can recognize businesses by taking a closer, <strong>place-centric</strong> look.
-            In this regard, we assess existing vision models on two perception tasks based on place-centric images: <i>i)</i> recognizing specific place types; <i>ii)</i> identifying human intentions by Vision Question Answering (VQA), named intention VQA.
-        </p>
-
-        <p class="text" style="margin-bottom: 5px;">
-            <strong>Setups:</strong> For recognition, we assess 10 open-world recognition models, for place type recognition from 96 options, using <i>place-centric images</i> (see below imagery illustration).
-        </p>
-        <div id="slider-img-street-place" class="slider-img-container">
-            <div class="my-slides">
-                <img data-zoomable src="static/img/streetview_vs_place/streetview_vs_placeimage_1.jpg" style="width:100%">
-            </div>
-            
-            <div class="my-slides">
-                <img data-zoomable src="static/img/streetview_vs_place/streetview_vs_placecentric_2.jpg" style="width:100%">
-            </div>
-
-            <div class="my-slides">
-                <img data-zoomable src="static/img/streetview_vs_place/streetview_vs_placecentric_3.jpg" style="width:100%">    
-            </div>
-                
-            <a class="prev" onclick="plusSlides('slider-img-street-place', -1)">❮</a>
-            <a class="next" onclick="plusSlides('slider-img-street-place', 1)">❯</a>
-            
-            <figcaption style="margin-bottom: 10px;">Street view imagery (left), sourced from the Google Street View database, are taken from a street-level perspective, encompassing a broad view of the surroundings, including multiple buildings. 
-            Place-centric imagery (right), drawn from the Google Place database, focus predominantly on the specific place, providing a more concentrated view.</figcaption>
-            <figcaption id="caption" style="margin-bottom: 10px; display: none"></figcaption>
-
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="static/img/streetview_vs_place/streetview_vs_placeimage_1.jpg" style="height: 60px; width: auto" onclick="currentSlide('slider-img-street-place', 1)" alt="Street view imagery (left) vs place-centric imagery (right).">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="static/img/streetview_vs_place/streetview_vs_placecentric_2.jpg" style="height: 60px; width: auto" onclick="currentSlide('slider-img-street-place', 2)" alt="Street view imagery (left) vs place-centric imagery (right).">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="static/img/streetview_vs_place/streetview_vs_placecentric_3.jpg" style="height: 60px; width: auto" onclick="currentSlide('slider-img-street-place', 3)" alt="Street view imagery (left) vs place-centric imagery (right).">
-                </div>
-            </div>
-        </div>
-        <p class="text">
-        For intention VQA, we also evaluate 13 multi-modal large language models (MM-LLM) to determine viable human intentions from a four-option multiple-choice VQA. The V-<i>RL Place</i> VQA process is illustrated in following image, where the candidate and true choices are generated by GPT-4 <d-cite key="openai2023gpt"></d-cite> given the place types and place names corresponding to the image.
-        </p>
-        <figure style="margin-top: 0px; margin-bottom: 0px">
-            <img src="static/img/bm_vqa_example.jpg" alt="V-IRL Place VQA" style="width: 80%; display: block; margin: auto;">
-            <figcaption style="width: 100%; text-align: center">Example of V-<i>RL Place</i> VQA process.</figcaption>
-        </figure>
-
-        <p class="text">
-            <strong>Results:</strong> Following table shows that CLIP (L/14@336px) outperforms even the biggest version of Eva-02-CLIP and SigLIP in the V-<i>RL Place</i> recognition task, emphasizing the high-quality data of CLIP. 
-            The bottom of the table shows that LLaVA-NeXT (7B) outperforms its predecessors LLaVA-1.5 and 1.0, but still has over 8% gap to InternVL-1.5 with 26B parameters. Closed-source MLLMs GPT-4V and Qwen-VL-Max yield outstanding performance compared to most open-sourced models.
-            We note that even these top-performing MLLMs (e.g. GPT-4V and Qwen-VL-Max) still suffer from inconsistent issues during the circular evaluation .
-            Moreover, vision models perform better on place VQA over place-type recognition, suggesting direct prompts about human intention could be more effective for intention-driven tasks.
-        </p>
-        <figure style="margin-top: 0px; margin-bottom: 0px">
-            <img src="static/img/bm_table_rec_vqa.png" alt="V-IRL Place VQA" style="width: 80%; display: block; margin: auto;">
-            <figcaption style="width: 100%; text-align: left">Benchmark results on V-<i>RL Place</i> recognition and V-<i>RL Place</i> VQA. <span class="resscolor">Green</span> indicates increased resolution models, while <span class="sizescolor">Blue</span> denotes model parameter scaling.</figcaption>
-        </figure>
-
-        <h3 class="text">WAYLO</i> Vision Language Navigation</h3>
-        <p class="text">
-            <strong>Motivation:</strong> As discussed in the WAYLO</i> agents section, Intentional Explorer and Tourist agents require collaboration between vision models and language models to accomplish complex tasks. Therefore, this motivates us to investigate the performance of vision-language collaboration, with environmental information acquired through visual perception models from real-world images. 
-            This prompts us to build an embodied task for jointly leveraging vision and language models along with the realistic street views in WAYLO</i>. 
-            In this regard, we build this WAYLO</i> Vision Language Navigation (VLN) benchmark.
-        </p>
-
-        <p class="text">
-            <strong>Setups:</strong> We adapt the Tourist agent implementation and replace its recognition component with the various benchmarked models. These methods are tasked to identify visual landmarks during navigation. Subsequently, GPT-4 <d-cite key="openai2023gpt"></d-cite> predicts the next action according to the recognition results. Navigation instructions are generated using the Local agent.<br> 
-            Four approaches are evaluated to recognize landmarks during navigation: <i>(i)</i> Approximate oracle by searching nearby landmarks; <i>(ii)</i> Zero-shot recognizers CLIP <d-cite key="radford2021learning"></d-cite> and EVA-02-CLIP <d-cite key="EVA-CLIP"></d-cite>; <i>(iii)</i> Multi-modal LLM LLaVA-1.5 <d-cite key="liu2023improvedllava"></d-cite>
-            <i>(iv)</i> OCR model <d-cite key="du2009pp"></d-cite> to recognize potential text in street views followed by GPT answer parsing.
-        </p>
-
-        <p class="text">
-            <strong>Results:</strong> Following table shows that, with <em>oracle landmark information</em>, powerful LLMs can impressively comprehend navigation instructions and thus make accurate decisions. However, when using vision models to fetch landmark information from street views, the success rate drops dramatically, suggesting that the perception of vision models is noisy and misguides LLMs' decision making. Among these recognizers, larger vMiss Leents of CLIP <d-cite key="radford2021learning"></d-cite> and EVA-02-CLIP <d-cite key="EVA-CLIP"></d-cite> perform better, highlighting the benefits of model scaling. LLaVA-1.5 <d-cite key="liu2023improvedllava"></d-cite> shows inferior performance with CLIP (L/14@336px) as its vision encoder, possibly due to the alignment tax <d-cite key="openai2023gpt"></d-cite> during instruction tuning. 
-            Further, PP-OCR <d-cite key="du2009pp"></d-cite> (+ GPT-3.5) achieves a 28% success rate, signifying that OCR is crucial for visual landmark recognition. 
-        </p>
-
-        <d-figure>
-            <figure style="margin-top: 0px; margin-bottom: 0px">
-                <img src="static/img/bm_table_vln.png" alt=" VLN" style="width: 80%; display: block; margin: auto;" data-zoomable>
-                <figcaption style="width: 100%; text-align: left">Results on WAYLO</i> VLN-mini. We test various CLIP-based models, <span class="resscolor">MM-LLM</span>, and <span class="sizescolor">OCR</span> model with GPT postprocessing.  We primarily measure navigation success rate (<i>Success</i>). In addition, as navigation success is mainly influenced by the agent's actions at key positions (<i>i.e.</i>, start positions, intersections and stop positions), we also evaluate the arrival ratio (<i>Arr</i>) and reaction accuracy (<i>Reac</i>) for each route. Arr denotes the percentage of key positions reached, while Reac measures the accuracy of the agent's action predictions at these key positions. Full-set results on CLIP and Oracle are available in paper appendix.</figcaption>
-            </figure>
-        </d-figure>
-
-        <h3 id="geo-diversity" class="text">Geographic Diversity</h3>
-        <p class="text">
-            Spanning 12 cities across the globe, our WAYLO</i> benchmarks provide an opportunity to analyze the inherent model biases in different regions. As depicted in the following figure, vision models demonstrate subpar performance on all three benchmark tasks in Lagos, Tokyo, Hong Kong, and Buenos Aires.
-            In Lagos, vision models might struggle due to its non-traditional street views relative to more developed cities (see street views in aside figures). For cities like Tokyo, Hong Kong and Buenos Aires, an intriguing observation is their primary use of non-English languages in street views.
-            This suggests that existing vision models face challenges with multilingual image data.
-        </p>
-
-        <div class="bm_city_fig">
-            <img id="bm_city_img" data-zoomable src="static/img/bm_city_analysis.jpg" alt="City level analysis" style="width: 100%;">
-            <figcaption style="width: 100%; text-align: center">City-level visualization of WAYLO</i> benchmark results.</figcaption>
-            <aside class="left-side-bar">
-                <img id="street_lagos" data-zoomable src="static/img/bm_city/street_lagos.jpg" style="width: 240px; height: auto; ">
-                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Lagos, Nigeria.</figcaption>
-                <img data-zoomable id="street_tokyo" src="static/img/bm_city/street_tokyo.jpg" style="width: 240px; height: auto">
-                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Tokyo, Japan </figcaption>
-                <img data-zoomable id="street_tokyo" src="static/img/bm_city/street_ny.jpg" style="width: 240px; height: auto">
-                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">New York City, USA </figcaption>
-            </aside>
-            <aside class="right-side-bar">
-                <img data-zoomable id="street_hk" src="static/img/bm_city/street_hk.jpg" style="width: 240px; height: auto">
-                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Hong Kong, China.</figcaption>
-                <img  data-zoomable id="street_ba" src="static/img/bm_city/street_Buenos_Aires.jpg" style="width: 240px; height: auto">
-                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Buenos Aires, Argentina.</figcaption>
-                <img  data-zoomable id="street_ba" src="static/img/bm_city/street_mumbai.jpg" style="width: 240px; height: auto">
-                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Mumbai, India.</figcaption>
-            </aside>
-        </div>        
-        </div>
-
-        <div id="discussion" style="position: relative; margin-top: 40px; margin-bottom: 0px;">
-            <h2 class="text" style="margin-top:0px; margin-bottom:10px"><img src="static/img/icons/discussion.png" width="50px"> Discussion: Ethics & Privacy</h2>
-        
-            <p class="text">Our platform serves as a tool for AI development and as a crucible for ethical discourse and preparation. As AI is inevitably being integrated into society&mdash;<em>e.g.</em>, via augmented reality wearables or robots navigating city streets&mdash;it is imperative to confront and discuss ethical and privacy concerns now. Unlike these impending <em>real-time</em> systems, the data accessed by <em>V-IRL</em> is "stale" and often preprocessed&mdash;providing a controlled environment to study these concerns.</p>
-            
-            <p class="text">Notably, <em>WAYLO</em> exclusively utilizes preexisting, readily available APIs; it does not capture or make available any previously inaccessible data. Our primary source of street-view imagery, Google Maps<d-cite key="google_map_platform"></d-cite>, is subject to major privacy-protection measures, including blurring faces and license plates <d-cite key="frome2009large"></d-cite>. 
-            Moreover, <em>WAYLO</em> complies with the <a href="https://cloud.google.com/maps-platform/terms">Google Maps Platform license</a>, similarly to notable existing works that also leverage Google's street views <d-cite key="zamir2014image"></d-cite> <d-cite key="chen2019touchdown"></d-cite>.</p>
-            
-            <p class="text">
-                We believe <em>WAYLO</em> is an invaluable tool for researching bias. As discussed in <a href="#geo-diversity">geographic diversity</a>, <em>WAYLO</em>'s <em>global scale</em> provides a lens to study linguistic, cultural, and other geographic biases inherent in models. By using <em>WAYLO</em> to study such questions, we aim to preemptively tackle the ethical dilemmas that will arise with deploying real-time systems rather than being blindsided by them. We hope our work helps spur proactive discussion of future challenges throughout the community.
-            </p>
-        </div>
-
-        <div id="conclusion" style="position: relative; margin-top: 20px; margin-bottom: 40px;">
-            <h2 class="text" style="margin-top:0px; margin-bottom:10px"><img src="static/img/icons/conclusion.jpg" width="50px"> Conclusion</h2>
-            <p class="text">
-                In this work, we introduce <em>WAYLO</em>, an open-source platform designed to bridge the sensory gap between the digital and physical worlds, enabling AI agents to interact with the real world in a virtual yet realistic environment.
-                Through <em>WAYLO</em>, agents can develop rich sensory grounding and perception, utilizing real geospatial data and street-view imagery.
-                We demonstrate the platform's versatility by creating diverse exemplar agents and developing benchmarks measuring the performance of foundational language and vision models on open-world visual data from across the globe.
-            </p>
-            <p class="text">
-                This platform opens new avenues for advancing AI capabilities in perception, decision-making, and real-world data interaction.
-                As spatial computing and robotic systems become increasingly prevalent, the demand for and possibilities of AI agents will only grow.
-                From personal assistants to practical applications like urban planning to life-changing tools for the visually impaired, we hope <em>WAYLO</em> helps usher in a new era of perceptually grounded agents.
-            </p>
-        </div>
+    
 
         </d-article>
         <!-- <d-appendix>
